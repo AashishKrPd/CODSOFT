@@ -7,3 +7,5 @@ Hey there! This is Aashish Kumar Prasad. Here I uploaded all my Web Development 
 
 
 ![Caclc]([http://url/to/img.png](https://github.com/AashishKrPd/CODSOFT/blob/main/Thumbnail/Calculator.png))
+
+<img href="./Thumbnail/Calculator.png" alt="Calc">
