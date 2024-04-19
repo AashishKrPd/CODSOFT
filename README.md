@@ -7,5 +7,5 @@ Hey there! This is Aashish Kumar Prasad. Here I uploaded all my Web Development 
 
 
 
-[go]("https://google.com")(:target="_blank" rel="noopener")
+[go]("https://google.com"){:target="_blank" rel="noopener"}
 
