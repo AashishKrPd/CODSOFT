@@ -3,11 +3,9 @@ Hey there! This is Aashish Kumar Prasad. Here I uploaded all my Web Development 
 
 ## Calculator
 
-[Take A Look](https://aashishkrpd.github.io/CODSOFT/Calculator)
+![Take A Look](Thumbnail/Calculator.png)
 
 
-![Caclc]((https://github.com/AashishKrPd/CODSOFT/blob/main/Thumbnail/Calculator.png))
 
-<img href="./Thumbnail/Calculator.png" alt="Calc">
 
 
