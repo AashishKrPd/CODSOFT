@@ -84,7 +84,7 @@ body{
 
 #display{
     margin: 0 10px;
-    height: 150px;
+    height: 50px;
     width: auto;
     max-width: 270px;
     display: flex;
@@ -92,7 +92,19 @@ body{
     justify-content: flex-end;
     font-size: 30px;
     margin-bottom: 20px;
+    margin: 40px auto 20px auto;
     overflow-x: scroll;
+    overflow-x: auto;
+    border-radius: 5px;
+    text-align: right;
+    color: var(--black);
+}
+
+#display{
+    background-color: var(--calc-bg-color);
+    border: none;
+    color: var(--display-color);
+    /* color: white; */
 }
 
 #display::-webkit-scrollbar{
