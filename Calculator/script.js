@@ -54,6 +54,10 @@ document.addEventListener('keydown', function(event) {
         display.value+="%";        
     }
 
+    else if (event.shiftKey && event.code === 'Digit6') {     
+        display.value+="^";        
+    }
+
     else if (event.code.startsWith('Numpad')) {
         const num = key[key.length - 1];
         display.value += num;
