@@ -104,7 +104,6 @@ body{
     background-color: var(--calc-bg-color);
     border: none;
     color: var(--display-color);
-    /* color: white; */
 }
 
 #display::-webkit-scrollbar{
