@@ -644,6 +644,7 @@ nav {
   .footer-container {
     grid-template-columns: 2fr repeat(3, 1fr);
   }
+
 }
 
 @media (width > 1024px) {
@@ -663,4 +664,6 @@ nav {
   .chef-bg {
     max-width: 375px;
   }
+
+  
 }
