@@ -7,8 +7,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-
-
 // light Mode 
 let lightModeIcon = document.querySelector('#lightMode-icon');
 console.log(lightModeIcon);
@@ -21,16 +19,8 @@ lightModeIcon.onclick = () => {
 };
 
 
-
-// Scroll Section Active link
-
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
-
-// console.log(sections);
-// console.log(navlinks);
-
-
 
 
 window.onscroll = () => {
@@ -39,11 +29,10 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-
         if (top >= offset && top < offset + height) {
             navlinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active')                
             })
         }
 
@@ -58,21 +47,44 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-
-
-
-
-ScrollReveal({
+const scrollRevealOption = {
     // reset: true,
-    distance: "800px",
-    duration: 2000,
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
     delay: 200
+};
+
+ScrollReveal().reveal('.home-content', {
+    ...scrollRevealOption,
+    delay: 100,
+    origin: "top",
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.heading', {
+    ...scrollRevealOption,
+    reset: true,
+    delay: 100,
+    origin: "top",
+});
+
+ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form", {
+    ...scrollRevealOption,
+    delay: 500,
+    origin: "bottom", 
+});
+
+ScrollReveal().reveal(".home-content h1, .about-img", {
+    ...scrollRevealOption,
+    delay: 500,
+    origin: "left", 
+});
+
+ScrollReveal().reveal(".home-content p, .about-content", {
+    ...scrollRevealOption,
+    delay: 500,
+    origin: "right", 
+});
 
 
 // Typed JS 
@@ -83,5 +95,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 100,
     loop: true
 });
-
-

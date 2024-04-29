@@ -22,7 +22,7 @@
 
 .light-mode {
     --bg-color: #fff;
-    --second-bg-color: #e6eaea;
+    /* --second-bg-color: #e6eaea; */
     --second-bg-color: #e8efef;
     --text-color: #1f2f2d;
     --main-color: #0ef;
@@ -291,6 +291,7 @@ span {
     transform: scaleX(0);
     transform-origin: left;
 }
+
 
 @keyframes animate {
     100% {
@@ -616,11 +617,13 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
+    color: white;
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: 0.3rem 0 1rem;
+    color: white;
 }
 
 .portfolio-layer a {
